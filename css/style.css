@@ -84,6 +84,9 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-links .link:hover {
   color: #404bbf;
@@ -94,6 +97,22 @@ img {
 .nav-links .link:focus {
   color: #404bbf;
 }
+
+.nav-links .container-link .link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: transparent;
+  transition: width 450ms ease-in-out;
+}
+
+.nav-links .container-link .link:hover::after,
+.nav-links .container-link .link.current::after {
+  width: 100%; 
+  background-color: black;
+}
+
 /* address style*/
 .address-links {
   font-style: normal;
@@ -102,6 +121,9 @@ img {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-links .link:hover {
   color: #404bbf;
@@ -155,6 +177,9 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  transition-property: background-color;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-one-button:hover,
 .section-one-button:focus {
@@ -273,7 +298,9 @@ img {
   line-height: 45px;
   background-color: #4d5ae5;
   margin:8px 0px 0px 13px;
-  transition-property: background-color,ease-in-out;
+  transition-property: background-color;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-svg:hover{
