@@ -174,6 +174,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.item-svg{
+  max-width:264px;
+  height: 112px;
+  border: #8E8F99 1px solid;
+  border-radius: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin-right: 24px 24px 8px 8px;
+}
+
 .container-our-advantages-list {
   display: flex;
   flex-wrap: nowrap;
@@ -249,6 +262,24 @@ img {
   text-align: center;
   color: #434455;
 }
+
+.our-team-svg{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 45px;
+  background-color: #4d5ae5;
+  margin:8px 0px 0px 13px;
+  transition-property: background-color,ease-in-out;
+}
+
+.our-team-svg:hover{
+  background-color:#21d0aa;
+}
+
 /* sect 4 */
 .our-portfolio {
   font-weight: 700;
