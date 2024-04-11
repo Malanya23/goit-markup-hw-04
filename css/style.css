@@ -85,6 +85,7 @@ img {
   flex-direction: row;
   gap: 0px;
   margin-right: 76px;
+  color:#404bbf;
 }
 .container-link {
   display: flex;
